@@ -10,7 +10,6 @@ class Message {
         return `${this.sendDate.getHours()}:${this.sendDate.getMinutes()} ${this.author}: ${this.text} `;
     }
 }
-
 class Messenger extends Message {
     constructor(author, text) {
         super(author, text)
@@ -32,6 +31,6 @@ class Messenger extends Message {
 }
 
 let messenger = new Messenger();
-messenger.send('Mecid', 'Ders oxuyur?');
-messenger.send('Vusal', 'Sabah bize gelirsen?')
+messenger.send('Adil', 'Ders oxuyur?');
+messenger.send('Meryem', 'Sabah bize gelirsen?')
 messenger.show_history();
